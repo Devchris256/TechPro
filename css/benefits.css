@@ -1,0 +1,44 @@
+.benefits {
+  padding-block: 3rem;
+}
+
+.benefit {
+  margin-block-end: 2.5rem;
+}
+
+.benefit-icon {
+  text-align: center;
+}
+
+.benefit-img {
+  inline-size: 3.125rem;
+  block-size: 3.125rem;
+}
+
+.benefit-title {
+  color: var(--primary);
+  text-align: center;
+  margin-block: 1rem;
+}
+
+.benefit-description {
+  text-align: center;
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .benefits {
+    padding-block: 4.5rem;
+  }
+
+  .benefits-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-content: center;
+    column-gap: 2rem;
+  }
+
+  .benefit {
+    margin: 0;
+  }
+}
