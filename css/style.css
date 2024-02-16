@@ -1,0 +1,51 @@
+:root {
+  font-size: 16px;
+  --fontMain: "Roboto", sans-serif;
+  --fontSecundary: "Lato", sans-serif;
+  --titleOne: 900 2.75rem/1.5 var(--fontMain);
+  --titleTwo: 900 2.25rem/1.5 var(--fontMain);
+  --titleThree: 900 1.75rem/1.5 var(--fontMain);
+  --primary: #1073ba;
+  --secondary: #00da55;
+  --lightGray: #e1e1e1;
+  --gray: #3b3b3b;
+  --white: #ffffff;
+  --black: #1f1e1e;
+}
+
+/* GLOBAL */
+body {
+  margin: 0;
+  font-family: var(--fontSecundary);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+img {
+  inline-size: 100%;
+  vertical-align: bottom;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* CLASES GLOBALES */
+
+.wrapper {
+  max-inline-size: 75rem;
+  padding-inline: 1rem;
+  margin: 0 auto;
+}
+
+.titleOne {
+  font: var(--titleOne);
+}
+
+.titleTwo {
+  font: var(--titleTwo);
+}
+
+.titleThree {
+  font: var(--titleThree);
+}
