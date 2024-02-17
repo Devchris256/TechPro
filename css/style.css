@@ -1,12 +1,14 @@
 @import "./header.css";
 @import "./benefits.css";
+@import "./sc-image.css";
+@import "./product-list.css";
 
 :root {
   font-size: 16px;
   --fontMain: "Roboto", sans-serif;
   --fontSecundary: "Lato", sans-serif;
   --titleOne: 900 3.75rem/1.5 var(--fontMain);
-  --titleTwo: 900 2.25rem/1.5 var(--fontMain);
+  --titleTwo: 900 2.5rem/1.5 var(--fontMain);
   --titleThree: 900 1.75rem/1.5 var(--fontMain);
   --primary: #1073ba;
   --secondary: #00da55;
@@ -33,28 +35,26 @@ a {
   text-decoration: none;
 }
 
-/* CLASES GLOBALES */
+h1 {
+  font: var(--titleOne);
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 6.25rem;
+  }
+}
+
+h2 {
+  font: var(--titleTwo);
+}
+
+h3 {
+  font: var(--titleThree);
+}
 
 .wrapper {
   max-inline-size: 75rem;
   padding-inline: 1rem;
   margin: 0 auto;
-}
-
-.titleOne {
-  font: var(--titleOne);
-}
-
-@media screen and (min-width: 768px) {
-  .titleOne {
-    font-size: 6.25rem;
-  }
-}
-
-.titleTwo {
-  font: var(--titleTwo);
-}
-
-.titleThree {
-  font: var(--titleThree);
 }
