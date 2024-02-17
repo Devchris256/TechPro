@@ -1,0 +1,15 @@
+.footer {
+  padding: 2rem;
+}
+
+.footer-copyright {
+  color: var(--primary);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-copyright {
+    font-size: 1.25rem;
+  }
+}

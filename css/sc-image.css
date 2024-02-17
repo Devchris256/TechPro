@@ -1,11 +1,34 @@
+:root {
+  --bgImage: 18.75rem;
+}
+
 .scImage {
   background: linear-gradient(to bottom, transparent 50%, var(--primary) 0%),
-    url(../img/imagen-mujer.jpg) no-repeat right;
+    url(../img/imagen-mujer.jpg) no-repeat right top;
+}
+
+.scImage.is-white {
+  background: linear-gradient(
+      to bottom,
+      transparent var(--bgImage),
+      var(--white) 0%
+    ),
+    url(../img/newsletter.jpg) no-repeat top center;
+  background-size: 100%, 43.75rem;
 }
 
 .scImage-content {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
+  gap: 1.25rem;
+}
+
+.scImage-content.is-gridAuto {
+  grid-template-rows: repeat(2, minmax(var(--bgImage), auto));
+}
+
+.scImage-title {
+  font-size: 2.25rem;
 }
 
 .scImage-details {
@@ -13,6 +36,11 @@
   color: var(--white);
   text-align: center;
   padding-block: 1.5rem;
+}
+
+.scImage-details.is-black {
+  color: var(--black);
+  background: var(--white);
 }
 
 .scImage-text {
@@ -25,10 +53,27 @@
   }
 }
 
+@media screen and (min-width: 600px) {
+  .scImage.is-white {
+    background: linear-gradient(
+        to bottom,
+        transparent var(--bgImage),
+        var(--white) 0%
+      ),
+      url(../img/newsletter.jpg) no-repeat top center;
+    background-size: 100%, 53.75rem;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .scImage {
     background: linear-gradient(to left, transparent 50%, var(--primary) 0%),
       url(../img/imagen-mujer.jpg) no-repeat right;
+  }
+
+  .scImage.is-white {
+    background: linear-gradient(to right, transparent 50%, var(--white) 0%),
+      url(../img/newsletter.jpg) no-repeat top right 5rem;
   }
 
   .scImage-content {
@@ -38,14 +83,39 @@
     column-gap: 2rem;
   }
 
+  .scImage-content.is-gridAuto {
+    grid-template-rows: unset;
+  }
+
   .scImage-details {
     grid-column: 1/2;
+    grid-row: 1/2;
     text-align: left;
+  }
+
+  .scImage-details.is-black {
+    grid-column: 2/3;
   }
 }
 
 @media screen and (min-width: 900px) {
+  .scImage.is-white {
+    background: linear-gradient(to right, transparent 50%, var(--white) 0%),
+      url(../img/newsletter.jpg) no-repeat;
+    background-position: center, -5rem 0rem;
+  }
   .scImage-content {
     padding-block: 4rem;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .scImage {
+    background-position-x: right;
+    background-size: auto, 50%;
+  }
+  .scImage.is-white {
+    background-position-x: left;
+    background-size: auto, 50%;
   }
 }

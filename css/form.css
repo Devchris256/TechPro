@@ -1,0 +1,16 @@
+.form-email {
+  inline-size: 100%;
+  box-sizing: border-box;
+  padding: 0.5rem;
+}
+
+.form-button {
+  inline-size: 100%;
+  box-sizing: border-box;
+  background: var(--primary);
+  padding: 1.25rem;
+  border: none;
+  color: var(--white);
+  font-weight: 900;
+  text-align: center;
+}

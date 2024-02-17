@@ -39,6 +39,10 @@
   font-size: 3.75rem;
 }
 
+.product-x {
+  margin-block-end: 0;
+}
+
 .product-type {
   margin: 0;
 }
@@ -51,7 +55,7 @@
 
 .product-picture {
   inline-size: 8.75rem;
-  aspect-ratio: 1/1;
+  block-size: 8.75rem;
 }
 
 .product-img {

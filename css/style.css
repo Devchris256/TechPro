@@ -2,6 +2,8 @@
 @import "./benefits.css";
 @import "./sc-image.css";
 @import "./product-list.css";
+@import "./form.css";
+@import "./footer.css";
 
 :root {
   font-size: 16px;
@@ -51,6 +53,12 @@ h2 {
 
 h3 {
   font: var(--titleThree);
+}
+
+h1,
+h2,
+h3 {
+  margin-block: 1rem;
 }
 
 .wrapper {
