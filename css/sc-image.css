@@ -2,18 +2,44 @@
   --bgImage: 18.75rem;
 }
 
-.scImage {
+.notavif.notwebp .scImage {
   background: linear-gradient(to bottom, transparent 50%, var(--primary) 0%),
     url(../img/imagen-mujer.jpg) no-repeat right top;
 }
+.webp .scImage {
+  background: linear-gradient(to bottom, transparent 50%, var(--primary) 0%),
+    url(../img/imagen-mujer.webp) no-repeat right top;
+}
+.avif .scImage {
+  background: linear-gradient(to bottom, transparent 50%, var(--primary) 0%),
+    url(../img/imagen-mujer.avif) no-repeat right top;
+}
 
-.scImage.is-white {
+.notavif.notwebp .scImage.is-white {
   background: linear-gradient(
       to bottom,
       transparent var(--bgImage),
       var(--white) 0%
     ),
     url(../img/newsletter.jpg) no-repeat top center;
+  background-size: 100%, 43.75rem;
+}
+.webp .scImage.is-white {
+  background: linear-gradient(
+      to bottom,
+      transparent var(--bgImage),
+      var(--white) 0%
+    ),
+    url(../img/newsletter.webp) no-repeat top center;
+  background-size: 100%, 43.75rem;
+}
+.avif .scImage.is-white {
+  background: linear-gradient(
+      to bottom,
+      transparent var(--bgImage),
+      var(--white) 0%
+    ),
+    url(../img/newsletter.avif) no-repeat top center;
   background-size: 100%, 43.75rem;
 }
 
@@ -54,7 +80,7 @@
 }
 
 @media screen and (min-width: 600px) {
-  .scImage.is-white {
+  .notavif.notwebp .scImage.is-white {
     background: linear-gradient(
         to bottom,
         transparent var(--bgImage),
@@ -63,17 +89,51 @@
       url(../img/newsletter.jpg) no-repeat top center;
     background-size: 100%, 53.75rem;
   }
+  .webp .scImage.is-white {
+    background: linear-gradient(
+        to bottom,
+        transparent var(--bgImage),
+        var(--white) 0%
+      ),
+      url(../img/newsletter.webp) no-repeat top center;
+    background-size: 100%, 53.75rem;
+  }
+  .avif .scImage.is-white {
+    background: linear-gradient(
+        to bottom,
+        transparent var(--bgImage),
+        var(--white) 0%
+      ),
+      url(../img/newsletter.avif) no-repeat top center;
+    background-size: 100%, 53.75rem;
+  }
 }
 
 @media screen and (min-width: 768px) {
-  .scImage {
+  .notavif.notwebp .scImage {
     background: linear-gradient(to left, transparent 50%, var(--primary) 0%),
       url(../img/imagen-mujer.jpg) no-repeat right;
   }
+  .webp .scImage {
+    background: linear-gradient(to left, transparent 50%, var(--primary) 0%),
+      url(../img/imagen-mujer.webp) no-repeat right;
+  }
+  .avif .scImage {
+    background: linear-gradient(to left, transparent 50%, var(--primary) 0%),
+      url(../img/imagen-mujer.avif) no-repeat right;
+  }
 
-  .scImage.is-white {
+  .notavif.notwebp .scImage.is-white {
     background: linear-gradient(to right, transparent 50%, var(--white) 0%),
       url(../img/newsletter.jpg) no-repeat top right 5rem;
+  }
+  .webp .scImage.is-white {
+    background: linear-gradient(to right, transparent 50%, var(--white) 0%),
+      url(../img/newsletter.webp) no-repeat top right 5rem;
+  }
+  .avif .scImage.is-white {
+    background: linear-gradient(to right, transparent 50%, var(--white) 0%),
+      url(../img/newsletter.avif) no-repeat top right 5rem;
   }
 
   .scImage-content {
@@ -99,23 +159,54 @@
 }
 
 @media screen and (min-width: 900px) {
-  .scImage.is-white {
+  .notavif.notwebp .scImage.is-white {
     background: linear-gradient(to right, transparent 50%, var(--white) 0%),
       url(../img/newsletter.jpg) no-repeat;
     background-position: center, -5rem 0rem;
   }
+  .webp .scImage.is-white {
+    background: linear-gradient(to right, transparent 50%, var(--white) 0%),
+      url(../img/newsletter.webp) no-repeat;
+    background-position: center, -5rem 0rem;
+  }
+  .avif .scImage.is-white {
+    background: linear-gradient(to right, transparent 50%, var(--white) 0%),
+      url(../img/newsletter.avif) no-repeat;
+    background-position: center, -5rem 0rem;
+  }
   .scImage-content {
     padding-block: 4rem;
+    column-gap: 6rem;
   }
 }
 
 @media screen and (min-width: 1500px) {
-  .scImage {
+  .notavif.notwebp .scImage {
     background-position-x: right;
     background-size: auto, 50%;
   }
-  .scImage.is-white {
+  .webp .scImage {
+    background-position-x: right;
+    background-size: auto, 50%;
+  }
+  .avif .scImage {
+    background-position-x: right;
+    background-size: auto, 50%;
+  }
+  .notavif.notwebp .scImage.is-white {
     background-position-x: left;
     background-size: auto, 50%;
+  }
+  .webp .scImage.is-white {
+    background-position-x: left;
+    background-size: auto, 50%;
+  }
+  .avif .scImage.is-white {
+    background-position-x: left;
+    background-size: auto, 50%;
+  }
+
+  .scImage-content {
+    column-gap: 8rem;
   }
 }
